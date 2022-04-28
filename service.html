@@ -11,23 +11,7 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 })(window,document.documentElement,'async-hide','dataLayer',4000,
 {'OPT-NZGBJZG':true});</script>
     <script src="https://www.googleoptimize.com/optimize.js?id=OPT-NZGBJZG"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87TDF615RN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-87TDF615RN');
-
-  function manyExp(value,name){
-      console.log(value,name,'Value Name');
-
-  }
-
-  gtag('event','optimize.callback',{
-      callback:manyExp
-  });
-</script>
+    
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -310,33 +294,9 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
 
         <div class="overlay"></div>
         <!-- Javascript files-->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+       
 
-        <script src="js/jquery-3.0.0.min.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#dismiss, .overlay').on('click', function() {
-                    $('#sidebar').removeClass('active');
-                    $('.overlay').removeClass('active');
-                });
-
-                $('#sidebarCollapse').on('click', function() {
-                    $('#sidebar').addClass('active');
-                    $('.overlay').addClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script>
+        
 
         <style>
             #owl-demo .item {
@@ -349,37 +309,30 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                 height: auto;
             }
         </style>
+         <script async src="https://www.googletagmanager.com/gtag/js?id=G-87TDF615RN"></script>
+         
 
         <script>
-            $(document).ready(function() {
-                var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    margin: 10,
-                    nav: true,
-                    loop: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 2
-                        },
-                        1000: {
-                            items: 3
-                        }
-                    }
-                })
-            })
+   console.log('testing');       
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-87TDF615RN');
 
+  function manyExp(value,name){
+    console.log('testing2');  
+      console.log(value,name,'Value Name');
 
-            const intervalId = setInterval(() => {
-  if (window.google_optimize !== undefined) {
-    const variant = window.google_optimize.get('KjXxpvASTOuwVJHTKyyTWw');
-    console.log(variant,'variant');
-    clearInterval(intervalId);
   }
-}, 500);
+
+  gtag('event','optimize.callback',{
+      callback:manyExp
+  });
+</script>
+
+
+            
         </script>
 
 </body>
