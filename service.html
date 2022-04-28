@@ -18,6 +18,15 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
   gtag('js', new Date());
 
   gtag('config', 'G-87TDF615RN');
+
+  function manyExp(value,name){
+      console.log(value,name,'Value Name');
+
+  }
+
+  gtag('event','optimize.callback',{
+      callback:manyExp
+  });
 </script>
     <!-- basic -->
     <meta charset="utf-8">
@@ -361,6 +370,16 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
                     }
                 })
             })
+
+
+
+            const intervalId = setInterval(() => {
+  if (window.google_optimize !== undefined) {
+    const variant = window.google_optimize.get('KjXxpvASTOuwVJHTKyyTWw');
+    console.log(variant,'variant');
+    clearInterval(intervalId);
+  }
+}, 500);
         </script>
 
 </body>
