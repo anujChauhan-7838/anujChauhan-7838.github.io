@@ -369,14 +369,13 @@ h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
          
            gtag('config', 'G-87TDF615RN');
          
-           function implementExperimentA(value){
+           function implementExperimentA(name ,value){
              console.log('testing2');  
-               console.log(value,name,'Value Name');
+               console.log(value+' '+name,'Value Name');
          
            }
          
            gtag('event', 'optimize.callback', {
-             name: 'KjXxpvASTOuwVJHTKyyTWw',
              callback: implementExperimentA
           });
           console.log(google_optimize && google_optimize.get('KjXxpvASTOuwVJHTKyyTWw'));
